@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Teci - Electricista en Sevilla | Averías, Instalaciones y Urgencias 24h</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#0f2a4a",
+        "on-primary": "#ffffff",
+        "primary-container": "#1c3f66",
+        secondary: "#f2b705",
+        "on-secondary": "#1c1b1b",
+        surface: "#f7f9fb",
+        "surface-container-low": "#eef2f6",
+        "surface-container": "#e7edf3",
+        "on-surface": "#161b21",
+        "on-surface-variant": "#4a5563",
+        "outline-variant": "#d4dce4",
+        tertiary: "#161b21",
+        "on-tertiary": "#ffffff",
+        "tertiary-fixed-dim": "#c7ccd2"
+      },
+      borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+      spacing: { "container-max": "1280px", "section-gap": "100px", "margin-mobile": "20px", "margin-desktop": "64px", gutter: "32px" },
+      fontFamily: {
+        "display-lg": ["Manrope"], "display-lg-mobile": ["Manrope"],
+        "headline-md": ["Manrope"], "headline-sm": ["Manrope"],
+        "body-lg": ["Work Sans"], "body-md": ["Work Sans"], "label-caps": ["Work Sans"]
+      },
+      fontSize: {
+        "display-lg-mobile": ["38px", { lineHeight: "46px", letterSpacing: "-0.01em", fontWeight: "700" }],
+        "display-lg": ["60px", { lineHeight: "68px", letterSpacing: "-0.02em", fontWeight: "700" }],
+        "headline-md": ["30px", { lineHeight: "38px", fontWeight: "700" }],
+        "headline-sm": ["22px", { lineHeight: "30px", fontWeight: "700" }],
+        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "700" }]
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased">
+<header class="bg-primary text-on-primary fixed top-0 w-full z-50 shadow-md">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-headline-sm text-headline-sm font-bold flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[32px] text-secondary">bolt</span>
+Teci Electricistas
+</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="hover:text-secondary transition-colors" href="#servicios">Servicios</a>
+<a class="hover:text-secondary transition-colors" href="#trabajos">Trabajos</a>
+<a class="hover:text-secondary transition-colors" href="#contacto">Contacto</a>
+</nav>
+<div class="hidden lg:flex items-center gap-6">
+<a class="flex items-center gap-2 font-bold hover:text-secondary transition-colors" href="tel:954340405">
+<span class="material-symbols-outlined text-[20px]">call</span>
+954 34 04 05
+</a>
+<a class="bg-secondary text-on-secondary px-6 py-3 rounded font-bold hover:opacity-90 transition-all active:scale-95 flex items-center gap-2" href="#contacto">
+Pedir presupuesto
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<button class="md:hidden p-2">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</header>
+<div class="h-20 w-full"></div>
+
+<main>
+<section class="relative min-h-[80vh] flex items-center bg-primary text-on-primary overflow-hidden">
+<div class="absolute inset-0 opacity-15 bg-cover bg-center" style="background-image:url('https://loremflickr.com/1600/1000/electrician,wiring')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70"></div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter py-24">
+<div class="lg:col-span-8 flex flex-col justify-center gap-8">
+<div class="inline-flex items-center gap-2 bg-secondary/15 px-4 py-2 rounded-full w-max text-secondary font-label-caps text-label-caps border border-secondary/40">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+Urgencias eléctricas 24 horas
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg max-w-[800px]">
+Electricista de confianza en <span class="text-secondary">Sevilla</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-primary/80 max-w-[600px]">
+Averías, instalaciones y certificados eléctricos con respuesta rápida. Más de 15 años dando servicio en Triana y toda Sevilla, con presupuesto claro antes de empezar.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 mt-2">
+<a class="bg-secondary text-on-secondary px-8 py-4 rounded font-bold hover:-translate-y-1 transition-all flex items-center justify-center gap-2" href="#contacto">
+Pedir presupuesto gratis
+<span class="material-symbols-outlined">bolt</span>
+</a>
+<a class="border-2 border-on-primary/40 px-8 py-4 rounded font-bold hover:bg-white/10 transition-colors flex items-center justify-center gap-2" href="tel:954340405">
+<span class="material-symbols-outlined">call</span>
+954 34 04 05
+</a>
+</div>
+<div class="flex items-center gap-6 mt-6 pt-6 border-t border-white/15">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">15+</span>
+<span class="font-label-caps text-label-caps text-on-primary/70">Años de experiencia</span>
+</div>
+<div class="w-px h-12 bg-white/15"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">24h</span>
+<span class="font-label-caps text-label-caps text-on-primary/70">Urgencias</span>
+</div>
+<div class="w-px h-12 bg-white/15 hidden sm:block"></div>
+<div class="flex flex-col hidden sm:flex">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">Rda. Triana</span>
+<span class="font-label-caps text-label-caps text-on-primary/70">Sevilla</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop" id="servicios">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-[700px] mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Servicios Eléctricos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Instalaciones, reparaciones y mantenimiento con materiales certificados y garantía en todos los trabajos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded bg-primary text-on-primary hover:shadow-xl transition-all cursor-pointer min-h-[400px]">
+<div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:scale-105 transition-transform duration-700" style="background-image:url('https://loremflickr.com/1200/1200/electrical,panel')"></div>
+<div class="relative z-10 h-full p-8 flex flex-col justify-end">
+<span class="material-symbols-outlined text-[40px] text-secondary mb-4">home_repair_service</span>
+<h3 class="font-headline-sm text-headline-sm mb-2">Averías Urgentes 24h</h3>
+<p class="font-body-md text-body-md text-on-primary/80 max-w-[400px]">Cortes de luz, cortocircuitos y averías resueltas el mismo día, cualquier día de la semana.</p>
+</div>
+</div>
+<div class="bg-white p-8 rounded border border-outline-variant hover:border-secondary hover:-translate-y-1 transition-all group">
+<span class="material-symbols-outlined text-[32px] text-primary mb-6 p-4 bg-primary/5 rounded-full inline-block group-hover:bg-secondary group-hover:text-on-secondary transition-colors">electrical_services</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Instalaciones Nuevas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Instalación eléctrica completa para viviendas, locales y reformas.</p>
+</div>
+<div class="bg-white p-8 rounded border border-outline-variant hover:border-secondary hover:-translate-y-1 transition-all group">
+<span class="material-symbols-outlined text-[32px] text-primary mb-6 p-4 bg-primary/5 rounded-full inline-block group-hover:bg-secondary group-hover:text-on-secondary transition-colors">verified</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Certificados Eléctricos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Boletines e informes oficiales para viviendas y locales comerciales.</p>
+</div>
+<div class="bg-white p-8 rounded border border-outline-variant hover:border-secondary hover:-translate-y-1 transition-all group">
+<span class="material-symbols-outlined text-[32px] text-primary mb-6 p-4 bg-primary/5 rounded-full inline-block group-hover:bg-secondary group-hover:text-on-secondary transition-colors">lightbulb</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Iluminación y Domótica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Diseño de iluminación LED y automatización del hogar.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-primary py-16 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-1/4 -translate-y-1/4">
+<span class="material-symbols-outlined text-[350px] text-white">bolt</span>
+</div>
+<div class="max-w-container-max mx-auto text-center relative z-10 flex flex-col items-center">
+<h2 class="font-headline-md text-headline-md text-on-primary mb-6 max-w-[800px]">¿Tienes una avería eléctrica ahora mismo?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-10 max-w-[600px]">Atendemos urgencias en Sevilla capital <strong class="text-secondary">las 24 horas</strong>, todos los días del año.</p>
+<a class="bg-secondary text-on-secondary px-8 py-4 rounded font-bold hover:bg-white transition-colors" href="tel:954340405">Llamar ahora: 954 34 04 05</a>
+</div>
+</section>
+
+<section class="py-section-gap bg-surface px-margin-mobile md:px-margin-desktop" id="trabajos">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-[700px] mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Precios Orientativos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Presupuesto cerrado antes de empezar, sin sorpresas en la factura.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+<div class="bg-white p-8 rounded border border-outline-variant flex flex-col h-full hover:shadow-lg transition-all">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Diagnóstico de Avería</h3>
+<div class="text-secondary font-bold text-[28px] mb-6">Desde 45€</div>
+<ul class="flex flex-col gap-3 mb-8 flex-grow">
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Revisión completa del cuadro</li>
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Localización del fallo</li>
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Informe por escrito</li>
+</ul>
+<a class="bg-primary text-on-primary py-3 rounded text-center font-bold hover:opacity-90 transition-opacity" href="#contacto">Pedir presupuesto</a>
+</div>
+<div class="bg-white p-8 rounded border-2 border-secondary flex flex-col h-full shadow-md relative">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-on-secondary px-4 py-1 rounded-full text-label-caps font-label-caps">Más Solicitado</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Cambio de Cuadro Eléctrico</h3>
+<div class="text-secondary font-bold text-[28px] mb-6">Desde 350€</div>
+<ul class="flex flex-col gap-3 mb-8 flex-grow">
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Cuadro nuevo homologado</li>
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Boletín eléctrico incluido</li>
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Garantía 2 años</li>
+</ul>
+<a class="bg-primary text-on-primary py-3 rounded text-center font-bold hover:opacity-90 transition-opacity" href="#contacto">Pedir presupuesto</a>
+</div>
+<div class="bg-white p-8 rounded border border-outline-variant flex flex-col h-full hover:shadow-lg transition-all">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Instalación Completa</h3>
+<div class="text-secondary font-bold text-[28px] mb-6">Desde 1.200€</div>
+<ul class="flex flex-col gap-3 mb-8 flex-grow">
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Vivienda u local completo</li>
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Certificado oficial</li>
+<li class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Materiales de primera calidad</li>
+</ul>
+<a class="bg-primary text-on-primary py-3 rounded text-center font-bold hover:opacity-90 transition-opacity" href="#contacto">Pedir presupuesto</a>
+</div>
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-cover bg-center h-64 rounded" style="background-image:url('https://loremflickr.com/500/500/electrician,tools')"></div>
+<div class="bg-cover bg-center h-64 rounded" style="background-image:url('https://loremflickr.com/500/500/electrical,wiring')"></div>
+<div class="bg-cover bg-center h-64 rounded md:col-span-2" style="background-image:url('https://loremflickr.com/1000/500/circuit,breaker')"></div>
+</div>
+</div>
+</section>
+
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-[700px] mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Lo que dicen nuestros clientes</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded border border-outline-variant shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"><span class="material-symbols-outlined">person</span></div>
+<div><h4 class="font-bold text-primary">Antonio R.</h4><div class="flex text-secondary"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span></div></div>
+</div>
+<p class="text-on-surface-variant italic">"Vinieron rapidísimo a arreglar una avería de madrugada. Muy profesionales y el precio justo."</p>
+</div>
+<div class="bg-white p-8 rounded border border-outline-variant shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"><span class="material-symbols-outlined">person</span></div>
+<div><h4 class="font-bold text-primary">María G.</h4><div class="flex text-secondary"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span></div></div>
+</div>
+<p class="text-on-surface-variant italic">"Nos cambiaron el cuadro eléctrico completo. Trabajo limpio y con el boletín en regla."</p>
+</div>
+<div class="bg-white p-8 rounded border border-outline-variant shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"><span class="material-symbols-outlined">person</span></div>
+<div><h4 class="font-bold text-primary">Javier L.</h4><div class="flex text-secondary"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span></div></div>
+</div>
+<p class="text-on-surface-variant italic">"Instalación eléctrica de mi local en tiempo récord. Totalmente recomendados."</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-section-gap bg-primary text-on-primary px-margin-mobile md:px-margin-desktop" id="contacto">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline-md text-headline-md mb-4">Pide tu presupuesto</h2>
+<p class="font-body-md text-body-md text-on-primary/80 mb-8">Cuéntanos qué necesitas y te respondemos el mismo día.</p>
+<div class="flex flex-col gap-4">
+<p class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">location_on</span>Rda. de Triana, 13, 41010 Sevilla</p>
+<p class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">call</span>954 34 04 05</p>
+<p class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">schedule</span>Urgencias 24 horas, todos los días</p>
+</div>
+</div>
+<form action="https://formsubmit.co/TU_EMAIL_AQUI" method="POST" class="bg-white text-on-surface p-8 rounded-lg flex flex-col gap-4">
+<input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - Teci"/>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant">Nombre</label>
+<input required name="Nombre" type="text" class="w-full border border-outline-variant rounded px-4 py-3 mt-1 focus:border-2 focus:border-secondary outline-none"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant">Teléfono</label>
+<input required name="Telefono" type="tel" class="w-full border border-outline-variant rounded px-4 py-3 mt-1 focus:border-2 focus:border-secondary outline-none"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant">¿Qué necesitas?</label>
+<textarea name="Mensaje" rows="3" class="w-full border border-outline-variant rounded px-4 py-3 mt-1 focus:border-2 focus:border-secondary outline-none"></textarea>
+</div>
+<button type="submit" class="bg-primary text-on-primary py-3 rounded font-bold hover:opacity-90 transition-opacity mt-2">Enviar solicitud</button>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="bg-tertiary text-on-tertiary px-margin-mobile md:px-margin-desktop py-12 text-center">
+<p class="font-body-md text-tertiary-fixed-dim">© 2024 Teci Electricistas. Rda. de Triana, 13, Sevilla.</p>
+</footer>
+
+<a class="fixed bottom-6 right-6 bg-secondary text-on-secondary w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50" href="tel:954340405">
+<span class="material-symbols-outlined text-[28px]">call</span>
+</a>
+</body></html>

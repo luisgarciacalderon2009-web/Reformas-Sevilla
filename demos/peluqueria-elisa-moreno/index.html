@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Peluquería Elisa Moreno - Estilista del Cabello</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#ffdad6",
+                      "primary-fixed-dim": "#ecbda4",
+                      "secondary-fixed": "#ffdea5",
+                      "secondary-fixed-dim": "#e9c176",
+                      "primary-container": "#dcae96",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#e6e5b9",
+                      "on-surface": "#1e1b18",
+                      "background": "#fff8f5",
+                      "on-background": "#1e1b18",
+                      "on-primary-container": "#62412e",
+                      "surface-dim": "#e1d8d4",
+                      "on-secondary-fixed": "#261900",
+                      "outline": "#82746d",
+                      "surface-tint": "#7a5642",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed": "#2e1506",
+                      "inverse-primary": "#ecbda4",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary": "#775a19",
+                      "surface-bright": "#fff8f5",
+                      "surface": "#fff8f5",
+                      "on-primary-fixed-variant": "#603f2d",
+                      "surface-container-high": "#efe6e2",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#f5ece7",
+                      "surface-variant": "#e9e1dc",
+                      "surface-container-highest": "#e9e1dc",
+                      "tertiary": "#60603e",
+                      "primary": "#7a5642",
+                      "on-tertiary-fixed-variant": "#484828",
+                      "secondary-container": "#fed488",
+                      "tertiary-container": "#bbba91",
+                      "primary-fixed": "#ffdbca",
+                      "surface-container-low": "#fbf2ed",
+                      "on-secondary-container": "#785a1a",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#cac99f",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed": "#1d1d03",
+                      "on-surface-variant": "#50443e",
+                      "inverse-surface": "#34302c",
+                      "inverse-on-surface": "#f8efea",
+                      "outline-variant": "#d4c3bb",
+                      "on-tertiary-container": "#4a4a2a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "section-padding": "80px",
+                      "unit": "8px",
+                      "mobile-margin": "20px",
+                      "container-max": "1200px",
+                      "gutter": "32px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Montserrat"
+                      ],
+                      "body-lg": [
+                              "Montserrat"
+                      ],
+                      "label-md": [
+                              "Montserrat"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .service-hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 50px rgba(220,174,150,0.25);
+        }
+        
+        .image-overlay {
+            background: linear-gradient(to top, rgba(122,86,66,0.8) 0%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container relative">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 dark:bg-background/80 backdrop-blur-md shadow-[0_20px_40px_rgba(220,174,150,0.15)] transition-all duration-300" id="main-header">
+<div class="flex justify-between items-center w-full px-mobile-margin md:px-section-padding h-20 max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="flex items-center gap-3 active:scale-95 transition-transform duration-200" href="#">
+<img alt="Logo Peluquería Elisa Moreno" class="h-10 w-10 object-contain rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJTws91jVayEHN2UfgKpJHeYoTsuPCYP17E9kc8ATv3g2nxWKHRo5ZubV842XzBaF3VHqt0dsTmk8W0FDcv_vTHdrcOkc8I11AK4KGOHWa_W1z67tOEFbPItktzCSmy8_FKcv9Q9KjzuJ0p3kFA0YuhzA-gzTDLqp2PX4U4iKQre5VXCqmc4bR9XC2Pw5zw275zDoJ929y4oBerCPEZsOpP_feIhf7yByNDciS32FSH2b278WapiEI"/>
+<span class="font-display-lg text-headline-sm tracking-tight text-primary dark:text-primary-fixed-dim">Elisa Moreno</span>
+</a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8 font-label-md text-label-md">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 uppercase tracking-widest" href="#servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 uppercase tracking-widest" href="#galeria">Galería</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 uppercase tracking-widest" href="#opiniones">Opiniones</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 uppercase tracking-widest" href="#contacto">Contacto</a>
+</nav>
+<!-- CTA / Mobile Menu Toggle -->
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-block border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary font-label-md text-label-md px-6 py-3 rounded-DEFAULT transition-all duration-300 uppercase tracking-widest" href="#contacto">Reservar</a>
+<button aria-label="Menu" class="md:hidden text-primary p-2" id="mobile-menu-btn">
+<span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Nav Menu (Hidden by default) -->
+<div class="hidden md:hidden absolute top-20 left-0 w-full bg-surface shadow-md border-t border-surface-variant flex flex-col items-center py-6 gap-6" id="mobile-menu">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#galeria">Galería</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#opiniones">Opiniones</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#contacto">Contacto</a>
+<a class="border border-secondary text-secondary font-label-md text-label-md px-6 py-3 rounded-DEFAULT mt-2 uppercase tracking-widest" href="#contacto">Reservar</a>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 w-full h-full">
+<img class="w-full h-full object-cover" data-alt="A luxurious, high-end boutique hair salon interior in Seville. Sunlit room, warm neutral tones, creamy white walls, dusty pink velvet chairs, and elegant aged gold mirrors. Minimalist, serene, and inviting atmosphere. Light mode aesthetic, professional photography, soft diffused natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtQIRBuLp4S7pyYBx2AdBpfTrX7Jjy3JmjInDKdwLqsvnRGs6plw9yHu5fLOIfaD-F4_cHB4Hpy6MYFmV7R9YK6yjQhyzzIY__k_2x9VtzwiBnvIg2MJMC3n-EDEheTPEueeWn7caReC033lxCcy9TB5TqTT8AsWngeKqEhJM8kTYrosaEl59d1tRKDzCI8U9EnGIIw1jAh1opQLjLsFSbCpDT3n8uoSNwKueTkaXIXQxJqLDNFopr"/>
+<div class="absolute inset-0 bg-background/40 backdrop-blur-[2px]"></div>
+<!-- Subtle gradient overlay to ensure text readability -->
+<div class="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-transparent md:w-2/3"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-mobile-margin md:px-section-padding flex flex-col items-start justify-center h-full gap-8 py-20">
+<span class="inline-block px-4 py-1.5 bg-primary-container/30 text-primary font-label-md text-label-md rounded-full uppercase tracking-widest backdrop-blur-sm">Estilista del Cabello</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface max-w-2xl text-balance">
+                    Realza tu belleza natural en el corazón de Sevilla
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Descubre una experiencia de cuidado capilar personalizada en un ambiente boutique, donde la elegancia tradicional se encuentra con las tendencias contemporáneas.
+                </p>
+<div class="mt-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-md text-label-md px-8 py-4 rounded-DEFAULT transition-all duration-300 uppercase tracking-widest shadow-[0_10px_20px_rgba(220,174,150,0.3)] hover:shadow-[0_15px_25px_rgba(220,174,150,0.5)] transform hover:-translate-y-1" href="#contacto">
+                        Reservar cita
+                    </a>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-padding bg-surface" id="servicios">
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-section-padding">
+<div class="text-center mb-16 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-size: 32px;">auto_awesome</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Nuestros Servicios</h2>
+<div class="w-16 h-0.5 bg-secondary-fixed mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(220,174,150,0.1)] service-hover-lift flex flex-col h-full border border-surface-variant/50">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">content_cut</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0">Corte</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">Asesoramiento visagista y corte de tendencia adaptado a tu estilo y facciones.</p>
+<div class="flex justify-between items-end border-t border-secondary-fixed/30 pt-4 mt-auto">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Desde</span>
+<span class="font-headline-sm text-headline-sm text-primary">25€</span>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(220,174,150,0.1)] service-hover-lift flex flex-col h-full border border-surface-variant/50">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0">Coloración</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">Técnicas avanzadas de color utilizando productos premium que cuidan la fibra capilar.</p>
+<div class="flex justify-between items-end border-t border-secondary-fixed/30 pt-4 mt-auto">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Desde</span>
+<span class="font-headline-sm text-headline-sm text-primary">45€</span>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(220,174,150,0.1)] service-hover-lift flex flex-col h-full border border-surface-variant/50">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">brush</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0">Mechas / Balayage</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">Iluminación personalizada para crear profundidad, dimensión y un brillo natural espectacular.</p>
+<div class="flex justify-between items-end border-t border-secondary-fixed/30 pt-4 mt-auto">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Desde</span>
+<span class="font-headline-sm text-headline-sm text-primary">75€</span>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(220,174,150,0.1)] service-hover-lift flex flex-col h-full border border-surface-variant/50">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0">Alisado</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">Tratamientos alisadores nutritivos que eliminan el encrespamiento y aportan suavidad extrema.</p>
+<div class="flex justify-between items-end border-t border-secondary-fixed/30 pt-4 mt-auto">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Desde</span>
+<span class="font-headline-sm text-headline-sm text-primary">90€</span>
+</div>
+</div>
+<!-- Service Card 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(220,174,150,0.1)] service-hover-lift flex flex-col h-full border border-surface-variant/50">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0 leading-tight">Tratamientos capilares</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">Rituales de hidratación, reconstrucción y spa capilar para devolver la salud a tu cabello.</p>
+<div class="flex justify-between items-end border-t border-secondary-fixed/30 pt-4 mt-auto">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Desde</span>
+<span class="font-headline-sm text-headline-sm text-primary">30€</span>
+</div>
+</div>
+<!-- Service Card 6 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(220,174,150,0.1)] service-hover-lift flex flex-col h-full border border-surface-variant/50">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0 leading-tight">Peinados de fiesta / Novia</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">Recogidos y estilismos exclusivos para que deslumbres en tus eventos más especiales.</p>
+<div class="flex justify-between items-end border-t border-secondary-fixed/30 pt-4 mt-auto">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Desde</span>
+<span class="font-headline-sm text-headline-sm text-primary">60€</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-section-padding bg-surface-container-low" id="galeria">
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-section-padding">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Nuestro Trabajo</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Inspiración y resultados reales. Estilismos elegantes y modernos diseñados en nuestro salón.</p>
+</div>
+<a class="flex items-center gap-2 text-secondary hover:text-primary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="https://instagram.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined" style="font-size: 20px;">photo_camera</span>
+                        Ver en Instagram
+                    </a>
+</div>
+<!-- Editorial Asymmetric Grid -->
+<div class="grid grid-cols-2 md:grid-cols-12 gap-4 md:gap-6">
+<!-- Large Feature (spans 7 cols) -->
+<div class="col-span-2 md:col-span-7 aspect-[4/3] md:aspect-auto md:h-[500px] rounded-lg overflow-hidden relative group shadow-[0_15px_30px_rgba(220,174,150,0.15)]">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Close up of beautiful, shiny brunette hair with delicate caramel balayage highlights, styled in loose, modern waves. Elegant boutique salon setting, bright, professional lighting emphasizing hair texture and color." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBW4XroFxXT0KQ1jcM6Qm3Ik-GZMg611bzk1hUbeDOY5NG7JWziaDhKJb6xV4szIn79U-yRFN206nIruJrqGRrSOxVKIPQ9h1CyMemoOxFw5NM0NMiylr3P-HZocq2s4JQoBUAkT5iX3pkogLSq_Yt3i1VVoKRfORRArMRKgrkfZZ70rE3dUfG4_kts2ChApmPbyItE8TQlwC8LaWAfRZ5CmxtjUTvUKr1qt_LZRRc7qk4rbEEsgIcw')"></div>
+</div>
+<!-- Tall vertical (spans 5 cols) -->
+<div class="col-span-2 md:col-span-5 aspect-[3/4] md:h-[500px] rounded-lg overflow-hidden relative group shadow-[0_15px_30px_rgba(220,174,150,0.15)]">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Elegant bridal updo hairstyle, textured low bun with delicate hair accessories, side profile view of a bride. Soft, romantic lighting, boutique aesthetic, creamy and gold tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCa_aTxCyzhLZZvMSTBJbWJRHx7wq6Lk6P_3KZInWYNdJZQpq-9VufDCf1u3noNncvHRUPpRhXylMZg46qKNmTPUcfqHpbSYURx7Aq3XgiHgQQ8I0zueEegAjiZuEGYbUupzFT9jYzUfRJfe8OdFnB5bo9gG4eq07ju5j9fCtm_wPTUeYgFMjBM08b-fAZokpi8bKTJMOOqSkW_0vhi-vUGeRY5uNmyIaPHQ04OQCeZHpDRkHzY7rY8')"></div>
+</div>
+<!-- Square (spans 4 cols) -->
+<div class="col-span-1 md:col-span-4 aspect-square rounded-lg overflow-hidden relative group shadow-[0_15px_30px_rgba(220,174,150,0.15)]">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A chic, sharp blonde bob haircut, perfectly styled straight, showing incredible shine and precision cutting. Modern minimalist salon background, bright airy light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSW6DeU4IhFC2DJEpVvF4HWT9trKk-SzBDwOudsEV7D3Ftwzk2NCIe9Ckjs61XDNWVcFP7tVm9SRbdLsQKPKKa3ILEn8Z_g6dTTAmt2Yh06Gbycg11n__xeCDxydukiX8r-zG0HW5f4sI2fWOOxrnYq_PIx1hPzpmvXScqcoiJaG_Gow5o-Q0ZrfHMd3GCqgCKheY40a3nz0zifHcal1uHtUJTN95GVjRcJtnysMSvOHCrqhU2i0Rr')"></div>
+</div>
+<!-- Square (spans 4 cols) -->
+<div class="col-span-1 md:col-span-4 aspect-square rounded-lg overflow-hidden relative group shadow-[0_15px_30px_rgba(220,174,150,0.15)]">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Rich copper-red long hair styled with glamorous, bouncy blowout curls. Over-the-shoulder shot highlighting the dimension and vibrancy of the color. Soft focus salon background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZM5cFS2z5upsZEf7OjNrJvj2pq5UcdDjgdTlMzRa2v9e93RS7d-qZpXMH819f0mBRQNnjZOJGqdbpw19Avp2BCUUXXs-ehgmMY_a4b6Jvm9G4vLHE9wyQ_XdwRdmMIZE_l0chCxe3117Y84hWU-ECuXyi5NtlfjyDnOhfxPjpjAOmnpqVx2MHV7l6qayCKOvom-5OiTQ9MTnQAc_IjiDAJ_QUIL5ADnVB5XfIB2xgLWrPb5HtSYcb')"></div>
+</div>
+<!-- Square (spans 4 cols) -->
+<div class="col-span-2 md:col-span-4 aspect-[2/1] md:aspect-square rounded-lg overflow-hidden relative group shadow-[0_15px_30px_rgba(220,174,150,0.15)]">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Detail shot of high-end salon tools arranged elegantly on a clean marble surface next to a vase of soft pink roses. Scissors, premium brushes, and a golden clip. Aesthetic flatlay, dusty pink and cream palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCO_wS2QHQLuKbbd58ZbKb3rhQUC4Y_cy6ONfBD6SpRMCeK3g__fiMXpfHkhmCp8lFoKoatFIkRIVHwqdB9WnYI_U7lknL_eSBgSLJCJrfte6gtrsmVkCGLoY-4_7E0TDRRWpM4dWmk0rvLUDbpQQ4_kcqYwAOy3gB0Y1h6iDFndjmZgZytH-o3wB49aZVHhRRXs2kzdaj-u9B0l9jIvwNbbII5Y1pifNuE9NqC45V6bmSWCjWqsBv')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-section-padding bg-surface-container relative overflow-hidden" id="opiniones">
+<!-- Decorative background element -->
+<div class="absolute -top-40 -right-40 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-section-padding relative z-10">
+<div class="flex flex-col items-center text-center mb-16">
+<div class="flex gap-1 text-secondary mb-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<p class="font-label-md text-label-md text-primary uppercase tracking-widest mb-4">4.8 de 5 estrellas (39 Reseñas)</p>
+<h2 class="font-headline-md text-headline-md text-on-surface">Lo que dicen nuestras clientas</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(220,174,150,0.1)] relative">
+<span class="material-symbols-outlined absolute top-6 right-6 text-primary-container/30" style="font-size: 48px;">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6 relative z-10">"Elisa entendió exactamente lo que quería. Las mechas balayage han quedado espectaculares, muy naturales y el trato fue exquisito. Sin duda, mi nueva peluquería de confianza en Sevilla."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 flex items-center justify-center font-headline-sm text-secondary">M</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">María Gómez</p>
+<p class="text-xs text-outline font-body-md mt-1">Hace 2 semanas</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(220,174,150,0.1)] relative mt-0 md:mt-8">
+<span class="material-symbols-outlined absolute top-6 right-6 text-primary-container/30" style="font-size: 48px;">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6 relative z-10">"Fui para un peinado de invitada y me sentí cuidada desde el primer momento. El salón es precioso, transmite muchísima paz, y el resultado aguantó intacto toda la boda."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 flex items-center justify-center font-headline-sm text-secondary">L</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Laura Fernández</p>
+<p class="text-xs text-outline font-body-md mt-1">Hace 1 mes</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(220,174,150,0.1)] relative">
+<span class="material-symbols-outlined absolute top-6 right-6 text-primary-container/30" style="font-size: 48px;">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6 relative z-10">"El tratamiento de hidratación ha revivido mi pelo por completo. Me encantó el asesoramiento profesional y honesto. Se nota que utilizan productos de altísima calidad."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 flex items-center justify-center font-headline-sm text-secondary">C</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Carmen Ruiz</p>
+<p class="text-xs text-outline font-body-md mt-1">Hace 2 meses</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Location Section -->
+<section class="py-section-padding bg-background" id="contacto">
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-section-padding">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Contact Info -->
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-4 block">Visítanos</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Reserva tu momento de desconexión</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-2 uppercase tracking-wide">Dirección</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                        C. Sta. Vicenta María, 3<br/>
+                                        Casco Antiguo<br/>
+                                        41002 Sevilla
+                                    </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-2 uppercase tracking-wide">Teléfono</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<a class="hover:text-secondary transition-colors duration-300" href="tel:+34954223853">954 22 38 53</a>
+</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-2 uppercase tracking-wide">Horario</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="block">Lunes - Viernes: 10:00 - 20:00</span>
+<span class="block text-secondary-fixed-dim">Sábados: 10:00 - 14:00</span>
+<span class="block text-outline mt-1 text-sm">Domingos: Cerrado</span>
+</p>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary hover:bg-primary/90 font-label-md text-label-md px-8 py-4 rounded-DEFAULT transition-all duration-300 uppercase tracking-widest shadow-[0_10px_20px_rgba(220,174,150,0.2)]" href="tel:+34954223853">
+<span class="material-symbols-outlined">calendar_today</span>
+                                Llamar para reservar
+                            </a>
+</div>
+</div>
+<!-- Map / Image Location -->
+<div class="h-[500px] rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(220,174,150,0.15)] relative bg-surface-variant">
+<!-- We use an image acting as a map for aesthetic integration -->
+<div class="w-full h-full bg-cover bg-center" data-alt="Aesthetic, minimalist styled street map highlighting the historical center (Casco Antiguo) of Seville, Spain. Soft dusty pink and gold accents mapping out the streets. Professional, elegant boutique salon location context." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpmtatmGyYQYz1dpt3q9lopZ4gsnkPZ3U5BM9RCEW8iU8quAo7PsH-MO5_jqe7RpkGBiTCGu7lm-r30Xuco1O4bf3UwTMRDwM2JBLU9MBWe8scXjql4SM73A5zfxPeG1WBN7nxvaw_LVK6aws6ObMF4TJom7CvVih9ZpnFVP7jEPSDvL60bNI4tB452L8T1XK6e8TVPbDHTNRrX214T8kfE9q2VnOrEQhS6-03A86gCrA58mti_LA0')"></div>
+<!-- Overlay Pin -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary shadow-lg mb-2 animate-bounce">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2 rounded shadow-md text-center">
+<p class="font-label-md text-label-md text-primary m-0">Elisa Moreno</p>
+<p class="text-xs font-body-md text-on-surface-variant">C. Sta. Vicenta María, 3</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-surface-container dark:bg-surface-container-highest w-full rounded-t-full mt-10">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-mobile-margin md:px-section-padding py-12 gap-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-3 mb-6 md:mb-0 opacity-90 hover:opacity-100 transition-opacity duration-300">
+<span class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight">Elisa Moreno</span>
+</div>
+<nav class="flex flex-wrap justify-center items-center gap-6 md:gap-8 font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 uppercase tracking-wider flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">photo_camera</span>
+                    Instagram
+                </a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 uppercase tracking-wider flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">thumb_up</span>
+                    Facebook
+                </a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 uppercase tracking-wider" href="#">Aviso Legal</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 uppercase tracking-wider" href="#">Privacidad</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 uppercase tracking-wider" href="#contacto">Contacto</a>
+</nav>
+<div class="mt-8 md:mt-0 text-center md:text-right font-body-md text-body-md text-on-surface-variant/80">
+                © 2024 Peluquería Elisa Moreno. Sevilla, España.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple JS for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const header = document.getElementById('main-header');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close menu on link click
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+
+            // Header shrink on scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-0');
+                    header.classList.remove('py-2');
+                } else {
+                    header.classList.add('py-2');
+                    header.classList.remove('py-0');
+                }
+            });
+        });
+    </script>
+</body></html>
